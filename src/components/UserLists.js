@@ -52,23 +52,16 @@ const UserList=()=>{
 
     else{
     return (
-        <>
-        <h1>user list</h1>
-        <div>
+        <div className="container">
+        <h1 className="heading">user list</h1>
+        <div className="all-users">
         {users.map((user,index)=>{
-            return(
-            <>
-                <UserItem key={index} item={user} />
-                
-            </>
-            
-            )
+            return<UserItem key={index} item={user} />
         })}
-        <Pagination changePage={changePage} />
-            
         </div>
+        <Pagination changePage={changePage} />
         
-        </>
+        </div>
     )
     }
 

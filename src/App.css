@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+*, *::after, *::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  box-sizing: inherit;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #FDEFEF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  height: 100%;
+  width: 100vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  margin: 5rem auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+}
+.heading{
+  text-transform: uppercase;
+  margin-bottom: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.all-users{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  margin-bottom: 3rem; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user{
+  background-color: #DAD0C2;
+  height: 100%;
+  display: flex;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+  min-width: 350px;
+  padding: 10px 5px;
+  border-radius: 5px;
 }
+.user-img{
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  margin: 0 10px;
+
+}
+.uesr--info{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h2{
+  font-size: 1.5rem;
+}
+
+h3{
+  font-size: 1rem;
+  color: gray;
+}
+
